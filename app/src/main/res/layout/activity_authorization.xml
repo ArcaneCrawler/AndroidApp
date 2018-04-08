@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yummy.profile.AuthorizationActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="130dp"
+        android:layout_height="86dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.084" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="339dp"
+        android:layout_height="335dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.809">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="0dp"
+            android:layout_height="318dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@color/regFormColor" />
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="264dp"
+            android:layout_height="42dp"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:hint="Телефон или e-mail"
+            android:inputType="textEmailAddress"
+            android:textColor="#D0D0D0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.116" />
+
+        <EditText
+            android:id="@+id/passEditText"
+            android:layout_width="264dp"
+            android:layout_height="44dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:hint="Пароль"
+            android:inputType="textPassword"
+            android:textColor="#D0D0D0"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailEditText"
+            app:layout_constraintVertical_bias="0.052" />
+
+        <Button
+            android:id="@+id/enterButton"
+            android:layout_width="260dp"
+            android:layout_height="47dp"
+            android:background="@android:color/holo_red_light"
+            android:text="Войти"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.626" />
+
+        <TextView
+            android:id="@+id/notRegTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="56dp"
+            android:layout_marginTop="8dp"
+            android:autoLink="web"
+            android:linksClickable="true"
+            android:onClick="notReg_Click"
+            android:text="Не зарегестрированы?"
+            android:textColor="#8C9099"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enterButton"
+            app:layout_constraintVertical_bias="0.857" />
+
+        <TextView
+            android:id="@+id/passDownTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:autoLink="web"
+            android:linksClickable="true"
+            android:text="Забыли пароль?"
+            android:textColor="#8C9099"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/notRegTextView"
+            app:layout_constraintVertical_bias="0.428" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
