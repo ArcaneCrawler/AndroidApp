@@ -5,4 +5,5 @@ package com.yummy.profile;
  */
 
 public class FuckGit {
+    //Fuck this shit
 }
